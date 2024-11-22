@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMS - Web Portal | Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #2b3d71;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .sidebar h3 {
+            margin: 0;
+            padding: 15px;
+            background-color: #4b6bbd;
+            text-align: center;
+        }
+        .sidebar p {
+            font-size: 14px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .sidebar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            margin: 5px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #1d2c5b;
+        }
+        .sidebar .menu-header {
+            background-color: #d9534f;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        /* Main content styling */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .main-header {
+            background-color: #4aa3d8;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h3>CAMS Web Portal</h3>
+        <p>For any Queries/Comments<br>mail to cams@mkce.ac.in</p>
+        
+        <div class="menu-header">Student</div>
+        <a href="#">CAMS Improvement</a>
+        <a href="#">Change Password</a>
+        <a href="#">Course Registration</a>
+        <a href="#">Exam Application</a>
+        <a href="#">Exam Timetable</a>
+        <a href="#">Feedback Corner</a>
+        <a href="#">Non Academic Complaint Register</a>
+        <a href="#">Student Corner</a>
+        <a href="#">Student Facility</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="main-header">
+            <span>M. KUMARASAMY COLLEGE OF ENGINEERING, KARUR - 639 113</span>
+            
+                <span>Student</span>
+            </div>
+        </div>
+        <div>
+            <h2>Welcome to the Student Dashboard</h2>
+            <p>Select an option from the sidebar to get started.</p>
+        </div>
+    </main>
+
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            // Redirect to login page if not logged in
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
+
+
